@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Comments with Rectangles from Multiple PDFs</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header>  <h1>EXTRACTING COMMENTS FROM PDF's AND CONVERTING INTO EXCEL</h1> </header>
+<div class="top_section">
+
+    <section class="uploadPDF">
+        <div class="pdfImg">
+            <img src="pdf.png" alt="PDF_ICON" class="pdf_ic">
+        </div>
+        <label class="file-input-container">
+            <span class="file-input-text">Choose Files</span>
+            <input type="file" id="fileInput" multiple />
+        </label>
+        <div class="file-count" id="fileCount">No files chosen</div>
+     </section>
+
+     <section class="text_content">
+        <p class="text">
+           IMPORT COMMENTS FROM PDF's TO EXCEL
+        </p>
+     </section>
+     
+       <section class="extractEXCEL">
+        <div class="pdfImg">
+            <img src="./excel.png" alt="EXCEL_ICON" class="excel_ic">
+        </div>
+        <button id="extractButton">Extract Comments</button>
+        <div class="file-counts" id="fileCounts">Click to extract</div>
+       </section>
+
+       <input type="hidden" id="uploadDate" />
+</div>
+
+<section class="imageBottom">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://lottie.host/901c3b3e-8e8b-442b-9ab8-8fcdf29ca81f/zj0ZR1avAv.json" background="#FFFFFF" speed="1" style="width: 700px; height: 200px"  mode="normal"></lottie-player>
+</section>
+
+   <!-- Include pdf.js and xlsx.js libraries from CDNs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+<!-- Set the worker source to the CDN location for pdf.js -->
+<script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+</script>
+
+<!-- <script src="./script.js"></script> -->
+ <!-- <script src="./newScript.js"></script> -->
+ <script src="./walmart.js"></script>
+</body>
+</html>
